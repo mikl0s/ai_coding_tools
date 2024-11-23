@@ -98,12 +98,12 @@ To complete a project efficiently:
 
 This toolkit has been tested with several AI-powered development tools, ensuring compatibility and optimizing workflows. Here’s a list of AI tools we have tested, along with their respective links:
 
-- ![Windsurf Editor](https://img.icons8.com/color/48/000000/surfing.png) **Windsurf Editor** - [Windsurf Editor](https://codeium.com/windsurf)
-- ![oTToDev](https://img.icons8.com/color/48/000000/artificial-intelligence.png) **oTToDev** - [GitHub Link](https://github.com/coleam00/bolt.new-any-llm)
-- ![Cline](https://img.icons8.com/color/48/000000/code.png) **Cline** - [GitHub Link](https://github.com/cline/cline)
-- ![Bolt.new](https://img.icons8.com/color/48/000000/bolt.png) **Bolt.new** - [Bolt.new](https://bolt.new)
-- ![Aide](https://img.icons8.com/color/48/000000/robot.png) **Aide** - [Aide](https://aide.dev/)
-- ![Kodu.ai](https://img.icons8.com/color/48/000000/idea.png) **Kodu.ai** - [Kodu.ai](https://www.kodu.ai/)
+- **Windsurf Editor** - [Windsurf Editor](https://codeium.com/windsurf)
+- **oTToDev** - [GitHub Link](https://github.com/coleam00/bolt.new-any-llm)
+- **Cline** - [GitHub Link](https://github.com/cline/cline)
+- **Bolt.new** - [Bolt.new](https://bolt.new)
+- **Aide** - [Aide](https://aide.dev/)
+- **Kodu.ai** - [Kodu.ai](https://www.kodu.ai/)
 
 ---
 
