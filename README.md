@@ -16,6 +16,7 @@ This repository provides tips, tricks, and snippets to help you effectively use 
 - [Example Output](#example-output)
 - [Suggested Workflow Rotation](#suggested-workflow-rotation)
 - [Tips for Productivity](#tips-for-productivity)
+- [Tested AI Tools](#tested-ai-tools)
 
 ---
 
@@ -90,6 +91,19 @@ To complete a project efficiently:
 - **🏷️ Versioning:** Tag each completed story for easy rollback and historical reference.  
 - **✅ Testing:** Regularly run the **Fix Codebase Prompt** to ensure the entire codebase remains stable and passes all unit tests.  
 - **🤝 Collaboration:** Share the project plan and outputs with your team for transparency and alignment.
+
+---
+
+## 🔍 Tested AI Tools
+
+This toolkit has been tested with several AI-powered development tools, ensuring compatibility and optimizing workflows. Here’s a list of AI tools we have tested, along with their respective links:
+
+- ![Windsurf Editor](https://img.icons8.com/color/48/000000/surfing.png) **Windsurf Editor** - [Windsurf Editor](https://codeium.com/windsurf)
+- ![oTToDev](https://img.icons8.com/color/48/000000/artificial-intelligence.png) **oTToDev** - [GitHub Link](https://github.com/coleam00/bolt.new-any-llm)
+- ![Cline](https://img.icons8.com/color/48/000000/code.png) **Cline** - [GitHub Link](https://github.com/cline/cline)
+- ![Bolt.new](https://img.icons8.com/color/48/000000/bolt.png) **Bolt.new** - [Bolt.new](https://bolt.new)
+- ![Aide](https://img.icons8.com/color/48/000000/robot.png) **Aide** - [Aide](https://aide.dev/)
+- ![Kodu.ai](https://img.icons8.com/color/48/000000/idea.png) **Kodu.ai** - [Kodu.ai](https://www.kodu.ai/)
 
 ---
 
