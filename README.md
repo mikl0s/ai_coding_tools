@@ -1,4 +1,4 @@
-# 🚀 Enhance Your Workflow with AI Coders like Windsurf
+# 🚀 AI Coding Tools: Enhance Your Workflow with AI Coders
 
 We believe in the power of collaboration! Any input, suggestions, or contributions are highly welcome to make this project even better. Feel free to open issues, submit pull requests, or simply share your ideas. Together, we can enhance our AI coding workflows!
 
@@ -89,7 +89,7 @@ To complete a project efficiently:
 > **💡 Tip:** Use version tags to manage your project versions effectively.
 
 - **🏷️ Versioning:** Tag each completed story for easy rollback and historical reference.  
-- **✅ Testing:** Regularly run the **Fix Codebase Prompt** to ensure the entire codebase remains stable and passes all unit tests.  
+- **✅ Testing:** Regularly run the [fix-codebase.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/fix-codebase.md) to ensure the entire codebase remains stable and passes all unit tests.  
 - **🤝 Collaboration:** Share the project plan and outputs with your team for transparency and alignment.
 
 ---
