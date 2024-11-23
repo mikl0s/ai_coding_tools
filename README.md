@@ -6,6 +6,7 @@ Example using these docs:
 First I write my draft of the project description in a markdown file, then I use the o1-mini to write the project plan.
 
 Link to project description file: https://github.com/mikl0s/ai_coding_tools/blob/main/docs/idea.md
+
 Link to guidelines file: https://github.com/mikl0s/ai_coding_tools/blob/main/docs/guidelines.md
 
 The o1-mini prompt:
@@ -375,6 +376,7 @@ The output:
 If you are in something like Windsurf, after putting this docs folder in your repo, you can use the following scripts to greatly increade the quality and productivity of your AI coding workflow:
 
 Next story prompt (also is used as the starting prompt) : https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/next-story.md
+
 Fix resume prompt : https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/fix-resume.md
 
 You iterate over fix-resume.md until the story is done and unit tests are passing. Then you run the post mortem prompt to analyze the lessons learned and prepare for the next story.
