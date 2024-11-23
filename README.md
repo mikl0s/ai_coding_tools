@@ -12,7 +12,7 @@ Link to guidelines file: https://github.com/mikl0s/ai_coding_tools/blob/main/doc
 The o1-mini prompt in full: https://github.com/mikl0s/ai_coding_tools/blob/main/docs/full-create-plan-prompt.md
 
 The output: https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md
-```	
+```Markdown
 Example output:
 
 # Project Plan for AI Supervisor App
