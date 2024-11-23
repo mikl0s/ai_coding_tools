@@ -1,20 +1,44 @@
-# AI Coding Tools
-Various tips and tick, snippets etc. to help use AI coders.
 
-Example using these docs:
+# AI Coding Tools: Enhance Your Workflow with AI Coders
 
-First I write my draft of the project description in a markdown file, then I use the o1-mini to write the project plan.
+This repository provides tips, tricks, and snippets to help you effectively use AI-powered coding tools in your projects. By following the provided examples and guidelines, you can significantly improve the quality and productivity of your AI coding workflows.
 
-Link to project description file: https://github.com/mikl0s/ai_coding_tools/blob/main/docs/idea.md
+---
 
-Link to guidelines file: https://github.com/mikl0s/ai_coding_tools/blob/main/docs/guidelines.md
+## How to Use These Tools
 
-The o1-mini prompt in full: https://github.com/mikl0s/ai_coding_tools/blob/main/docs/full-create-plan-prompt.md
+### Workflow Overview
 
-The output: https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md
-```Markdown
-Example output:
+1. **Start with Your Idea**  
+   Write your project description as a markdown file (e.g., [idea.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/idea.md)).
 
+2. **Generate a Project Plan**  
+   Use the `o1-mini` prompt to transform your project description into a detailed project plan.  
+   - **Prompt details**: [Full Create Plan Prompt](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/full-create-plan-prompt.md)  
+   - **Example output**: [Plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md)
+
+3. **Iterative Development**  
+   Utilize the provided prompts and tools to iteratively refine your codebase and address issues:
+   - **Next story prompt**: [next-story.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/next-story.md)  
+   - **Fix resume prompt**: [fix-resume.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/fix-resume.md)  
+   - **Post-mortem prompt**: [post-mortem.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/post-mortem.md)
+
+4. **Unit Testing and Codebase Maintenance**  
+   For comprehensive testing, run the full codebase evaluation prompt:
+   - **Fix codebase prompt**: [fix-codebase.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/fix-codebase.md)
+
+5. **Tagging for Rollback**  
+   After completing each story, tag your Git commit for easy versioning.  
+   - Example: After finishing story 1.1, tag the commit as `v0.1.1`.  
+   - For rollbacks, revert to the desired tag, uncheck relevant story tasks, and adjust lessons learned in the post-mortem.
+
+---
+
+### Example Output
+
+Here’s an example of a generated project plan:
+
+```markdown
 # Project Plan for AI Supervisor App
 
 ## Epics
@@ -31,18 +55,23 @@ Example output:
     - **Testing Focus**: Ensure realms and clients are correctly configured and functional.
 ```
 
-If you are in something like Windsurf, after putting this docs folder in your repo, you can use the following scripts to greatly increade the quality and productivity of your AI coding workflow:
+---
 
-Next story prompt (also is used as the starting prompt) : https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/next-story.md
+### Suggested Workflow Rotation
 
-Fix resume prompt : https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/fix-resume.md
+To complete a project efficiently:
+1. Use the **Next Story Prompt** as a starting point for the current development task.  
+2. Iterate using the **Fix Resume Prompt** to refine and fix issues until all unit tests pass.  
+3. Run the **Post-Mortem Prompt** after each story to capture lessons learned and prepare for the next story.
 
-You iterate over fix-resume.md until the story is done and unit tests are passing. Then you run the post mortem prompt to analyze the lessons learned and prepare for the next story.
+---
 
-Post mortem prompt : https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/post-mortem.md
+### Tips for Productivity
 
-These 3 are your rotation, to complete the project.
+- **Versioning:** Tag each completed story for easy rollback and historical reference.  
+- **Testing:** Regularly run the **Fix Codebase Prompt** to ensure the entire codebase remains stable and passes all unit tests.  
+- **Collaboration:** Share the project plan and outputs with your team for transparency and alignment.
 
-I sometimes run https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/fix-codebase.md to get a full pass on the entire codebase's unit tests and then use fix-resume to fix all issues.
+---
 
-For easy rollback I suggest you use a tag after each story - so let's say you are doing story 1.1 - once the story is done, passes and have been commited to git, you tag the commit with v0.1.1, v0.1.2 after story 1.2 etc. Makes it really easy to rollback to a previous version of the codebase and simply uncheck the checkboxes for the stories you want to rollback, and remove the lessons learned from the post mortem prompt for those stories.
+This repository serves as a complete toolkit for managing AI-driven software projects, helping you iterate quickly, maintain quality, and streamline your development process. Happy coding!
