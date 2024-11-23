@@ -1,2 +1,2 @@
-# ai_coding_tools
+# AI Coding Tools
 Various tips and tick, snippets etc. to help use AI coders
