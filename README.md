@@ -1,4 +1,4 @@
-# 🚀 AI Coding Tools: Enhance Your Workflow with AI Coders
+# 🚀 Enhance Your Workflow with AI Coders like Windsurf
 
 We believe in the power of collaboration! Any input, suggestions, or contributions are highly welcome to make this project even better. Feel free to open issues, submit pull requests, or simply share your ideas. Together, we can enhance our AI coding workflows!
 
