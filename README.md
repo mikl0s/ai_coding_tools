@@ -14,22 +14,22 @@ This repository provides tips, tricks, and snippets to help you effectively use 
 
 2. **Generate a Project Plan**  
    Use the following prompts to transform your project description into a detailed project plan:
-   - **Guidelines Prompt**: [guidelines.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/guidelines.md)  
-   - **Create Plan Prompt**: [create-plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/create-plan.md)  
-   - **Plan Structure Prompt**: [plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md)  
+   - Guidelines Prompt: [guidelines.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/guidelines.md)  
+   - Create Plan Prompt: [create-plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/create-plan.md)  
+   - Plan Structure Prompt: [plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md)  
 
-   These are combined into a single **Full Create Plan Prompt**: [full-create-plan-prompt.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/full-create-plan-prompt.md).  
-   - **Example output**: [Plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md)
+   These are combined into a single "Full Create Plan Prompt": [full-create-plan-prompt.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/full-create-plan-prompt.md).  
+   - Example output from **o1-mini**: [Plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md)
 
 3. **Iterative Development**  
    Utilize the provided prompts and tools to iteratively refine your codebase and address issues:
-   - **Next story prompt**: [next-story.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/next-story.md)  
-   - **Fix resume prompt**: [fix-resume.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/fix-resume.md)  
-   - **Post-mortem prompt**: [post-mortem.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/post-mortem.md)
+   - Next story prompt: [next-story.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/next-story.md)  
+   - Fix resume prompt: [fix-resume.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/fix-resume.md)  
+   - Post-mortem prompt: [post-mortem.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/post-mortem.md)
 
 4. **Unit Testing and Codebase Maintenance**  
    For comprehensive testing, run the full codebase evaluation prompt:
-   - **Fix codebase prompt**: [fix-codebase.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/fix-codebase.md)
+   - Fix codebase prompt: [fix-codebase.md](https://raw.githubusercontent.com/mikl0s/ai_coding_tools/refs/heads/main/docs/fix-codebase.md)
 
 5. **Tagging for Rollback**  
    After completing each story, tag your Git commit for easy versioning.  
