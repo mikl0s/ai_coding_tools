@@ -91,12 +91,6 @@ To complete a project efficiently:
 - **✅ Testing:** Regularly run the **Fix Codebase Prompt** to ensure the entire codebase remains stable and passes all unit tests.  
 - **🤝 Collaboration:** Share the project plan and outputs with your team for transparency and alignment.
 
-**✶✶✶**
-
-## 📌 Next Steps
-- Implement Keycloak setup.
-- Start unit testing with the provided prompts.
-
 ---
 
 This repository serves as a complete toolkit for managing AI-driven software projects, helping you iterate quickly, maintain quality, and streamline your development process. **Happy coding!**
