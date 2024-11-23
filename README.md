@@ -1,12 +1,12 @@
-# 🚀 AI Coding Tools: Enhance Your Workflow with AI Coders
+# 🚀 Enhance Your Workflow with AI Coders like Windsurf
 
 We believe in the power of collaboration! Any input, suggestions, or contributions are highly welcome to make this project even better. Feel free to open issues, submit pull requests, or simply share your ideas. Together, we can enhance our AI coding workflows!
 
 This repository provides tips, tricks, and snippets to help you effectively use AI-powered coding tools in your projects. By following the provided examples and guidelines, you can significantly improve the quality and productivity of your AI coding workflows.
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mikl0s/ai_coding_tools?cache_bust=1)
-![GitHub stars](https://img.shields.io/github/stars/mikl0s/ai_coding_tools)
-![GitHub issues](https://img.shields.io/github/issues/mikl0s/ai_coding_tools)
+![GitHub stars (latest by date)](https://img.shields.io/github/stars/mikl0s/ai_coding_tools?cache_bust=1)
+![GitHub issues (latest by date)](https://img.shields.io/github/issues/mikl0s/ai_coding_tools?cache_bust=1)
 
 ---
 
