@@ -1,247 +1,242 @@
-# AI Supervisor App Project Plan
+# Project Plan for AI Supervisor App
 
-## Epics and User Stories
+## Epics
 
-### [ ] 1. User Authentication
-- [ ] **Setup Keycloak Docker Container**
-  - Configure Keycloak using Docker.
-  - Ensure Keycloak is accessible locally and remotely.
-  - **Unit Tests:** Verify Keycloak container starts correctly and is reachable.
+- [ ] **User Authentication**
+  - *Implement secure user authentication and role-based access control using Keycloak.*
+
+  - [ ] *Set up Keycloak Docker container.*
+    - **Description**: Deploy Keycloak using Docker for authentication services.
+    - **Testing Focus**: Verify Keycloak container starts correctly and is accessible.
   
-- [ ] **Integrate Keycloak with Backend**
-  - Set up authentication middleware in the backend.
-  - Implement role-based access control.
-  - **Unit Tests:** Test middleware authentication flow and role enforcement.
+  - [ ] *Configure Keycloak realms and clients.*
+    - **Description**: Set up necessary realms and clients in Keycloak.
+    - **Testing Focus**: Ensure realms and clients are correctly configured and functional.
+  
+  - [ ] *Integrate Keycloak with the application backend.*
+    - **Description**: Connect the backend services to Keycloak for authentication.
+    - **Testing Focus**: Validate authentication flow between backend and Keycloak.
+  
+  - [ ] *Implement role-based access control in the application.*
+    - **Description**: Define and enforce roles and permissions within the app.
+    - **Testing Focus**: Test access restrictions based on user roles.
+  
+  - [ ] *Develop user management features.*
+    - **Description**: Allow users to manage their LLM configurations securely.
+    - **Testing Focus**: Ensure users can create, read, update, and delete their configurations.
 
-- [ ] **User Registration API**
-  - Create API endpoint for user registration.
-  - Validate user input during registration.
-  - **Unit Tests:** Test registration endpoint with valid and invalid inputs.
+- [ ] **User Interface**
+  - *Develop a sleek, modern UI with Tailwind CSS supporting light and dark themes.*
 
-- [ ] **User Login API**
-  - Create API endpoint for user login.
-  - Implement JWT token generation.
-  - **Unit Tests:** Test login endpoint for successful and failed authentications.
+  - [ ] *Set up Tailwind CSS in the project.*
+    - **Description**: Integrate Tailwind CSS into the frontend build process.
+    - **Testing Focus**: Confirm Tailwind CSS compiles and styles are applied correctly.
+  
+  - [ ] *Design and implement the main dashboard layout.*
+    - **Description**: Create the primary layout for the application's dashboard.
+    - **Testing Focus**: Verify the dashboard layout renders correctly on different devices.
+  
+  - [ ] *Implement light and dark theme toggling.*
+    - **Description**: Enable users to switch between light and dark UI themes.
+    - **Testing Focus**: Ensure theme changes apply correctly and persist across sessions.
+  
+  - [ ] *Develop responsive navigation components.*
+    - **Description**: Create navigation bars and menus that adapt to screen sizes.
+    - **Testing Focus**: Test navigation functionality on various screen resolutions.
+  
+  - [ ] *Create UI components for LLM configuration management.*
+    - **Description**: Build forms and interfaces for managing LLM settings.
+    - **Testing Focus**: Validate form inputs and data binding for LLM configurations.
 
-- [ ] **Manage User Sessions**
-  - Implement session timeout and refresh tokens.
-  - Securely store session data.
-  - **Unit Tests:** Verify session management logic and token refresh functionality.
+- [ ] **Admin Panel**
+  - *Integrate Forest Admin for efficient management of users and AI configurations.*
 
-- [ ] **Password Recovery API**
-  - Create API endpoint for password reset.
-  - Implement email notifications for password recovery.
-  - **Unit Tests:** Test password reset flow and email notification triggers.
+  - [ ] *Set up Forest Admin integration.*
+    - **Description**: Deploy Forest Admin within the application environment.
+    - **Testing Focus**: Ensure Forest Admin dashboard is accessible and functional.
+  
+  - [ ] *Configure user and role management in Forest Admin.*
+    - **Description**: Define user roles and permissions within Forest Admin.
+    - **Testing Focus**: Test role-based access within the admin panel.
+  
+  - [ ] *Implement data management interfaces for AI models.*
+    - **Description**: Allow admins to manage AI model configurations via Forest Admin.
+    - **Testing Focus**: Verify CRUD operations on AI model data through the admin panel.
+  
+  - [ ] *Customize Forest Admin views and workflows.*
+    - **Description**: Tailor the admin interface to fit the application's specific needs.
+    - **Testing Focus**: Ensure customized views function as intended without errors.
 
-- [ ] **Frontend Authentication Integration**
-  - Develop login and registration forms in the UI.
-  - Integrate frontend with authentication APIs.
-  - **Unit Tests:** Test form validations and API integrations.
+- [ ] **Persistence**
+  - *Store configurations, settings, logs, and monitoring results in PostgreSQL with a RESTful API.*
 
-### [ ] 2. User Interface
-- [ ] **Initialize React Project with Tailwind CSS**
-  - Set up React project structure.
-  - Configure Tailwind CSS for styling.
-  - **Unit Tests:** Ensure Tailwind is correctly applied and styles render as expected.
+  - [ ] *Set up PostgreSQL Docker container.*
+    - **Description**: Deploy PostgreSQL using Docker for data storage.
+    - **Testing Focus**: Confirm PostgreSQL container is running and accessible.
+  
+  - [ ] *Design database schema for LLM configurations and logs.*
+    - **Description**: Create tables and relationships for storing app data.
+    - **Testing Focus**: Validate the database schema for normalization and integrity.
+  
+  - [ ] *Implement RESTful API endpoints for data access.*
+    - **Description**: Develop API routes for CRUD operations on stored data.
+    - **Testing Focus**: Test each API endpoint for correct functionality and security.
+  
+  - [ ] *Integrate TypeORM with the backend services.*
+    - **Description**: Use TypeORM for database interactions and entity management.
+    - **Testing Focus**: Ensure TypeORM entities map correctly to the database schema.
+  
+  - [ ] *Implement data validation and error handling for API.*
+    - **Description**: Validate incoming data and handle errors gracefully in the API.
+    - **Testing Focus**: Verify that invalid data is rejected and errors are managed properly.
 
-- [ ] **Implement Theme Toggle**
-  - Create theme toggle component for light and dark modes.
-  - Persist user theme preference.
-  - **Unit Tests:** Test theme switching and preference persistence.
+- [ ] **Session History**
+  - *Maintain and provide access to persistent logs of LLM interactions.*
 
-- [ ] **Design Login Page**
-  - Develop login form with validation.
-  - Style using Tailwind CSS.
-  - **Unit Tests:** Validate form inputs and submission behavior.
+  - [ ] *Design data model for session logs.*
+    - **Description**: Define how session interactions are stored in the database.
+    - **Testing Focus**: Ensure session logs are accurately captured and stored.
+  
+  - [ ] *Develop API endpoints for retrieving session history.*
+    - **Description**: Create endpoints to fetch past LLM interaction logs.
+    - **Testing Focus**: Test retrieval of session history with correct filtering and pagination.
+  
+  - [ ] *Implement frontend views for browsing session history.*
+    - **Description**: Build UI components to display and navigate through past sessions.
+    - **Testing Focus**: Ensure session history is displayed correctly and is user-friendly.
+  
+  - [ ] *Add search and filter functionality to session logs.*
+    - **Description**: Allow users to search and filter through their session history.
+    - **Testing Focus**: Validate search accuracy and filter effectiveness on session logs.
+  
+  - [ ] *Ensure secure access to session data.*
+    - **Description**: Protect session history data based on user roles and permissions.
+    - **Testing Focus**: Verify that only authorized users can access specific session logs.
 
-- [ ] **Design Registration Page**
-  - Develop registration form with validation.
-  - Style using Tailwind CSS.
-  - **Unit Tests:** Validate form inputs and submission behavior.
+- [ ] **Customizable Instructions**
+  - *Enable users to define monitoring rules and feedback logic for AI interactions.*
 
-- [ ] **Create Dashboard Layout**
-  - Develop main dashboard structure.
-  - Implement responsive design for various screen sizes.
-  - **Unit Tests:** Verify responsive behavior and layout integrity.
+  - [ ] *Design UI for creating and managing custom instructions.*
+    - **Description**: Build interfaces for users to input and edit monitoring rules.
+    - **Testing Focus**: Ensure the instruction creation process is intuitive and functional.
+  
+  - [ ] *Implement backend logic for processing custom instructions.*
+    - **Description**: Develop services to interpret and apply user-defined rules.
+    - **Testing Focus**: Test that custom instructions are correctly parsed and executed.
+  
+  - [ ] *Store custom instructions in the database.*
+    - **Description**: Save user-defined rules and logic within PostgreSQL.
+    - **Testing Focus**: Verify that instructions are stored and retrieved accurately.
+  
+  - [ ] *Integrate custom instructions with LLM workflows.*
+    - **Description**: Ensure that the supervisory AI uses the defined instructions during interactions.
+    - **Testing Focus**: Confirm that custom rules influence AI behavior as expected.
+  
+  - [ ] *Provide validation and error feedback for instruction inputs.*
+    - **Description**: Validate user inputs when creating custom instructions and provide feedback.
+    - **Testing Focus**: Ensure invalid instructions are caught and users are informed appropriately.
 
-- [ ] **Implement Navigation Menu**
-  - Create sidebar or top navigation.
-  - Link to different sections of the app.
-  - **Unit Tests:** Test navigation links and active state indicators.
+- [ ] **Extensibility**
+  - *Create a modular structure to add new endpoint types or integrate additional LLMs easily.*
 
-- [ ] **Develop LLM Configuration Page**
-  - Create form to manage LLM configurations.
-  - Implement form validation.
-  - **Unit Tests:** Validate form inputs and API integration.
+  - [ ] *Define a plugin architecture for endpoint integrations.*
+    - **Description**: Establish a system for adding new LLM endpoints as plugins.
+    - **Testing Focus**: Test the addition and functionality of new plugins without affecting existing modules.
+  
+  - [ ] *Implement base interfaces for LLM integrations.*
+    - **Description**: Create standardized interfaces that new LLM integrations must follow.
+    - **Testing Focus**: Ensure new integrations adhere to the defined interfaces and work seamlessly.
+  
+  - [ ] *Develop example integrations for common LLMs.*
+    - **Description**: Provide sample implementations for popular LLMs to guide future integrations.
+    - **Testing Focus**: Verify that example integrations function correctly and serve as templates.
+  
+  - [ ] *Create documentation for extending the application.*
+    - **Description**: Document the process and requirements for adding new endpoints and LLMs.
+    - **Testing Focus**: Ensure documentation is clear, comprehensive, and facilitates easy extensions.
+  
+  - [ ] *Implement dynamic loading of integration modules.*
+    - **Description**: Allow the application to load and unload integration modules at runtime.
+    - **Testing Focus**: Test the dynamic loading process for stability and reliability.
 
-- [ ] **Session History View**
-  - Develop interface to display past sessions.
-  - Implement search and filter functionality.
-  - **Unit Tests:** Test data rendering, search, and filtering.
+- [ ] **Infrastructure Setup**
+  - *Set up Docker environments for all services to ensure consistent deployment.*
 
-- [ ] **Customizable Instructions Interface**
-  - Create UI for defining monitoring rules.
-  - Allow dynamic feedback logic setup.
-  - **Unit Tests:** Validate rule creation and editing functionalities.
+  - [ ] *Create Docker Compose configuration for all services.*
+    - **Description**: Define services like Keycloak, PostgreSQL, and Redis in Docker Compose.
+    - **Testing Focus**: Ensure all services start correctly using Docker Compose.
+  
+  - [ ] *Configure environment variables for different environments.*
+    - **Description**: Use environment variables to manage configurations for development, testing, and production.
+    - **Testing Focus**: Verify that environment-specific settings are applied correctly.
+  
+  - [ ] *Set up CI/CD pipelines for automated builds and deployments.*
+    - **Description**: Implement continuous integration and deployment workflows using tools like GitHub Actions.
+    - **Testing Focus**: Test the CI/CD pipelines to ensure they build and deploy successfully.
+  
+  - [ ] *Implement health checks and monitoring for services.*
+    - **Description**: Add health check endpoints and monitoring tools to track service status.
+    - **Testing Focus**: Ensure health checks accurately reflect the status of each service.
+  
+  - [ ] *Optimize Docker images for performance and security.*
+    - **Description**: Ensure Docker images are lightweight and secure by following best practices.
+    - **Testing Focus**: Verify that optimized images perform well and adhere to security standards.
 
-### [ ] 3. Admin Panel
-- [ ] **Setup Forest Admin Integration**
-  - Configure Forest Admin with the backend.
-  - Deploy Forest Admin panel.
-  - **Unit Tests:** Verify Forest Admin access and basic functionalities.
+- [ ] **Testing and Quality Assurance**
+  - *Ensure comprehensive testing coverage and maintain code quality standards.*
 
-- [ ] **Manage User Accounts in Admin Panel**
-  - Implement user management features.
-  - Enable CRUD operations for user accounts.
-  - **Unit Tests:** Test user creation, update, and deletion via admin panel.
+  - [ ] *Write unit tests for all backend services.*
+    - **Description**: Develop unit tests for each function and module in the backend.
+    - **Testing Focus**: Achieve high coverage and ensure all tests pass reliably.
+  
+  - [ ] *Implement automated tests for frontend components.*
+    - **Description**: Use React Testing Library to test all UI components.
+    - **Testing Focus**: Ensure UI components render correctly and respond to user interactions.
+  
+  - [ ] *Set up ESLint and Prettier for code quality and formatting.*
+    - **Description**: Integrate ESLint and Prettier into the development workflow.
+    - **Testing Focus**: Verify that code adheres to defined linting and formatting rules.
+  
+  - [ ] *Create JSDoc comments for all functions and modules.*
+    - **Description**: Document codebase with JSDoc for better maintainability.
+    - **Testing Focus**: Ensure all functions and modules are properly documented.
+  
+  - [ ] *Perform integration testing for API endpoints.*
+    - **Description**: Test the interaction between different backend services and APIs.
+    - **Testing Focus**: Validate that integrated components communicate and function as expected.
+  
+  - [ ] *Conduct security testing to identify vulnerabilities.*
+    - **Description**: Perform security audits and penetration testing on the application.
+    - **Testing Focus**: Identify and fix security issues to ensure compliance and protection.
+  
+  - [ ] *Enable parallel test execution to reduce runtime.*
+    - **Description**: Configure testing frameworks to run tests concurrently.
+    - **Testing Focus**: Ensure tests run in parallel without conflicts and complete faster.
+  
+  - [ ] *Mock external services in tests to ensure independence.*
+    - **Description**: Use mocks for services like Keycloak and external LLMs during testing.
+    - **Testing Focus**: Verify that tests remain reliable and isolated from external dependencies.
 
-- [ ] **Manage AI Model Configurations**
-  - Enable CRUD operations for AI models.
-  - **Unit Tests:** Validate model configuration workflows in admin panel.
+- [ ] **Documentation**
+  - *Provide comprehensive documentation for API endpoints and application usage.*
 
-- [ ] **Manage LLM Configurations in Admin Panel**
-  - Implement configuration management.
-  - **Unit Tests:** Test LLM configuration CRUD operations.
-
-- [ ] **Monitor System Logs via Admin Panel**
-  - Integrate system logging with Forest Admin.
-  - **Unit Tests:** Ensure logs are correctly captured and viewable.
-
-### [ ] 4. Persistence
-- [ ] **Setup PostgreSQL Docker Container**
-  - Configure PostgreSQL using Docker.
-  - Ensure secure and remote accessibility.
-  - **Unit Tests:** Verify database container starts and connections are secure.
-
-- [ ] **Define Database Schema with TypeORM**
-  - Create entities for users, LLM configurations, logs, etc.
-  - **Unit Tests:** Test entity relationships and schema integrity.
-
-- [ ] **Implement RESTful API for Data Access**
-  - Develop endpoints for CRUD operations on configurations and logs.
-  - Secure endpoints with authentication.
-  - **Unit Tests:** Test each API endpoint for correct data handling and security.
-
-- [ ] **Encrypt Sensitive Data**
-  - Implement encryption for data at rest using PostgreSQL features.
-  - Ensure data is encrypted in transit using TLS.
-  - **Unit Tests:** Verify encryption mechanisms and data security.
-
-- [ ] **API Documentation for Persistence Layer**
-  - Document all persistence-related APIs using Swagger/OpenAPI.
-  - **Unit Tests:** Ensure documentation accuracy with API endpoints.
-
-### [ ] 5. Session History
-- [ ] **Design Session History Database Model**
-  - Define tables for storing session logs and interactions.
-  - **Unit Tests:** Validate database model structure and relationships.
-
-- [ ] **Implement Session History API Endpoints**
-  - Create endpoints to fetch, filter, and paginate session logs.
-  - **Unit Tests:** Test data retrieval and filtering logic.
-
-- [ ] **Develop UI for Viewing Session History**
-  - Display session logs in the frontend with pagination and filtering.
-  - **Unit Tests:** Ensure data is correctly rendered and UI interactions work.
-
-- [ ] **Persist Interaction Logs**
-  - Ensure all LLM interactions are logged to the database.
-  - **Unit Tests:** Verify logging functionality during AI interactions.
-
-### [ ] 6. Customizable Instructions
-- [ ] **Define Monitoring Rules Schema**
-  - Create data models for monitoring rules and feedback logic.
-  - **Unit Tests:** Validate schema definitions and data integrity.
-
-- [ ] **Implement Rules Management API Endpoints**
-  - Develop CRUD operations for monitoring rules.
-  - **Unit Tests:** Test rule creation, updating, and deletion.
-
-- [ ] **Develop UI for Managing Instructions**
-  - Create forms to define and edit monitoring rules.
-  - **Unit Tests:** Validate form functionality and API integration.
-
-- [ ] **Integrate Rules with Supervisory AI Logic**
-  - Apply user-defined rules in the AI collaboration workflow.
-  - **Unit Tests:** Ensure rules are correctly influencing AI behavior.
-
-- [ ] **Validate User-Defined Rules**
-  - Implement validation for custom instructions to prevent errors.
-  - **Unit Tests:** Test validation logic with various rule inputs.
-
-### [ ] 7. Extensibility
-- [ ] **Design Modular Architecture**
-  - Structure codebase to support easy module additions and maintenance.
-  - **Unit Tests:** Verify module boundaries and integration points.
-
-- [ ] **Implement Plugin System for Endpoint Types**
-  - Develop a system to add new endpoints dynamically.
-  - **Unit Tests:** Test plugin addition and endpoint functionality.
-
-- [ ] **Create API for Integrating Additional LLMs**
-  - Define interfaces and protocols for new LLM integrations.
-  - **Unit Tests:** Validate integration interfaces and data flows.
-
-- [ ] **Develop Sample Integration for a New LLM**
-  - Add a new LLM integration as a proof of concept.
-  - **Unit Tests:** Ensure the sample integration works as expected.
-
-### [ ] 8. Infrastructure and DevOps
-- [ ] **Setup Docker Compose for All Services**
-  - Define services: Keycloak, PostgreSQL, Redis, etc.
-  - Configure networking and dependencies between containers.
-  - **Unit Tests:** Verify Docker Compose setup and service orchestration.
-
-- [ ] **Configure Redis Docker Container**
-  - Set up Redis for caching and session management.
-  - **Unit Tests:** Ensure Redis is operational and accessible by services.
-
-- [ ] **Implement Continuous Integration Pipeline**
-  - Set up CI to run tests on commits using tools like GitHub Actions or Jenkins.
-  - **Unit Tests:** Validate CI pipeline triggers and test executions.
-
-- [ ] **Implement Continuous Deployment Pipeline**
-  - Automate deployment to staging and production environments.
-  - **Unit Tests:** Test deployment scripts and rollback mechanisms.
-
-- [ ] **Setup Environment Variables Management**
-  - Securely manage environment variables for different environments.
-  - **Unit Tests:** Ensure environment variables are correctly loaded and secured.
-
-- [ ] **Monitor Application Performance**
-  - Integrate monitoring tools (e.g., Prometheus, Grafana) for real-time metrics.
-  - **Unit Tests:** Verify monitoring setup and data accuracy.
-
-- [ ] **Backup and Restore Strategy for Databases**
-  - Implement regular backups for PostgreSQL.
-  - **Unit Tests:** Test backup and restore procedures for reliability.
-
-- [ ] **Automate Docker Builds and Deployments**
-  - Create scripts for building and deploying Docker images.
-  - **Unit Tests:** Ensure automation scripts execute correctly and handle errors.
-
-### [ ] 9. Documentation
-- [ ] **Document API Endpoints with Swagger/OpenAPI**
-  - Ensure all APIs are well-documented and accessible.
-  - **Unit Tests:** Verify documentation matches implemented APIs.
-
-- [ ] **Provide JSDoc Comments for All Functions**
-  - Explain parameters, return values, and functionality.
-  - **Unit Tests:** Ensure JSDoc comments are present and accurate.
-
-- [ ] **Create User Guides for the Application**
-  - Write manuals for end-users and administrators.
-  - **Unit Tests:** Review guides for clarity and completeness.
-
-- [ ] **Maintain Developer Documentation**
-  - Provide setup, contribution, and architectural guidelines.
-  - **Unit Tests:** Ensure documentation is up-to-date with the codebase.
-
-- [ ] **Document Deployment Processes**
-  - Outline steps for deploying the application to various environments.
-  - **Unit Tests:** Validate deployment steps through dry runs or simulations.
-
-- [ ] **Ensure Documentation is Up-to-Date**
-  - Regularly review and update all documentation as the project evolves.
-  - **Unit Tests:** Implement checks to identify outdated documentation.
+  - [ ] *Document all RESTful API endpoints using Swagger/OpenAPI.*
+    - **Description**: Create Swagger documentation for easy API integration.
+    - **Testing Focus**: Ensure all endpoints are accurately documented and accessible via Swagger UI.
+  
+  - [ ] *Write user guides for application features.*
+    - **Description**: Develop guides to help users navigate and utilize app functionalities.
+    - **Testing Focus**: Verify that user guides are clear, accurate, and helpful.
+  
+  - [ ] *Create developer documentation for extending the app.*
+    - **Description**: Provide documentation for developers to understand the codebase and extend functionalities.
+    - **Testing Focus**: Ensure developer docs are comprehensive and facilitate easy onboarding.
+  
+  - [ ] *Maintain an up-to-date README with setup instructions.*
+    - **Description**: Keep the project's README current with installation and usage instructions.
+    - **Testing Focus**: Confirm that README instructions lead to a successful setup and deployment.
+  
+  - [ ] *Include architectural diagrams and flowcharts.*
+    - **Description**: Visualize the application's architecture and data flow for better understanding.
+    - **Testing Focus**: Ensure diagrams accurately represent the system and are easy to interpret.
 
