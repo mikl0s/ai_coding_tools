@@ -13,8 +13,12 @@ This repository provides tips, tricks, and snippets to help you effectively use 
    Write your project description as a markdown file (e.g., [idea.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/idea.md)).
 
 2. **Generate a Project Plan**  
-   Use the `o1-mini` prompt to transform your project description into a detailed project plan.  
-   - **Prompt details**: [Full Create Plan Prompt](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/full-create-plan-prompt.md)  
+   Use the following prompts to transform your project description into a detailed project plan:
+   - **Guidelines Prompt**: [guidelines.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/guidelines.md)  
+   - **Create Plan Prompt**: [create-plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/create-plan.md)  
+   - **Plan Structure Prompt**: [plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md)  
+
+   These are combined into a single **Full Create Plan Prompt**: [full-create-plan-prompt.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/full-create-plan-prompt.md).  
    - **Example output**: [Plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md)
 
 3. **Iterative Development**  
