@@ -78,6 +78,7 @@ Here’s an example of a generated project plan:
 ## 🔄 Suggested Workflow Rotation
 
 To complete a project efficiently:
+0. **New Cascade**: If using Windsurf, start a new cascade before you run the next story prompt. 
 1. **Next Story Prompt**: Start with the current development task.  
 2. **Fix Resume Prompt**: Iterate to refine and fix issues until all unit tests pass.  
 3. **Post-Mortem Prompt**: Capture lessons learned and prepare for the next story.
