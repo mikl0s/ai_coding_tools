@@ -10,3 +10,5 @@ Create or update a lesson.md file in the docs folder with a compressed format fo
 4. **Testing**: Focus especially on what you learned from the test results, to help guide future stories.
 
 Ensure the content is as brief as possible without losing actionable detail. Prioritize compression and relevance since this file will only be read by AI to optimize future story prompts.
+
+When finished, bring plan.md in docs folder up to date, if not updated already.

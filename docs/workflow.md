@@ -1,4 +1,4 @@
-### ➝ Workflow Overview 
+### Project Start ➝ Workflow Overview 
 
 1. **1⃣ Start with Your Idea**  
    Write your project description as a markdown file (e.g., [idea.md](01-idea.md)).
@@ -25,3 +25,12 @@
    After completing each story, tag your Git commit for easy versioning.  
    - Example: After finishing story 1.1, tag the commit as `v0.1.1`.  
    - For rollbacks, revert to the desired tag, uncheck relevant story tasks, and adjust lessons learned in the post-mortem.
+
+## 🔄 Suggested Workflow Rotation
+
+To complete a project efficiently:
+
+1. **New Cascade**: If using Windsurf, start a new cascade before you run the next story prompt. 
+2. **Next Story Prompt**: Start with the current development task.  
+3. **Fix Resume Prompt**: Iterate to refine and fix issues until all unit tests pass.  
+4. **Post-Mortem Prompt**: Capture lessons learned and prepare for the next story.
