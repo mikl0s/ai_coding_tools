@@ -17,5 +17,5 @@
 
 ## 5. Update and Commit
 
-- After completing the story and passing tests, update @plan.md and @README.md.
+- After completing the story and passing tests, update plan.md in docs folder and README.md in the root.
 - Use meaningful commit messages to document the progress and commit the changes but no pushing.
