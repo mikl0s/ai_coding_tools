@@ -29,10 +29,10 @@ This repository provides tips, tricks, and snippets to help you effectively use 
 
 2. **2⃣ Generate a Project Plan**  
    Use the following prompts to transform your project description into a detailed project plan:
-   - Guidelines Prompt: [guidelines.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/guidelines.md)  
    - Create Plan Prompt: [create-plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/create-plan.md)  
-   - Plan Structure Prompt: [plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md)  
-   - Full Create Plan Prompt: [full-create-plan-prompt.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/full-create-plan-prompt.md)  
+   - Guidelines Prompt: [guidelines.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/guidelines.md)
+   - Combine the two prompt above with your a description of your idea - you can iterate over your idea with any LLM - GPT-4o is pretty good at this.
+   - Example "Full Create Plan Prompt": [full-create-plan-prompt.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/full-create-plan-prompt.md)  
    - Example output from **o1-mini**: [Plan.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/plan.md)
 
 3. **3⃣ Iterative Development**  
