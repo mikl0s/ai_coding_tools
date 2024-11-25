@@ -22,7 +22,7 @@ This repository provides tips, tricks, and snippets to help you effectively use 
 
 ## 🚧 How to Use These Tools
 
-### ➝ Workflow Overview
+### ➝ Workflow Overview ([workflow.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/workflow.md))
 
 1. **1⃣ Start with Your Idea**  
    Write your project description as a markdown file (e.g., [idea.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/idea.md)).
