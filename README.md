@@ -91,7 +91,7 @@ To complete a project efficiently:
 > **💡 Tip:** Use version tags to manage your project versions effectively.
 
 - **🏷️ Versioning:** Tag each completed story for easy rollback and historical reference.  
-- **✅ Testing:** Regularly run the [fix-codebase.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/fix-codebase.md) to ensure the entire codebase remains stable and passes all unit tests.  
+- **✅ Testing:** Regularly run the [fix-codebase.md](https://github.com/mikl0s/ai_coding_tools/blob/main/docs/fix-codebase.md) to ensure the entire codebase remains stable and pass all tests.  
 - **🤝 Collaboration:** Share the project plan and outputs with your team for transparency and alignment.
 
 ---
