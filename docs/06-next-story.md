@@ -4,7 +4,7 @@
 
 ## 2. Detailed Implementation Plan
 
-- Find the next incomplete stories from plan.md in docs folder.
+- Find the next incomplete story from plan.md in docs folder.
 - Develop a comprehensive plan for the chosen story from plan.md in docs folder.
 
 ## 3. Implementation of the Next Story
