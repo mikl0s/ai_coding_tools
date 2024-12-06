@@ -4,6 +4,8 @@ We believe in the power of collaboration! Any input, suggestions, or contributio
 
 This repository provides tips, tricks, and snippets to help you effectively use AI-powered coding tools in your projects. By following the provided examples and guidelines, you can significantly improve the quality and productivity of your AI coding workflows.
 
+Work is progressing on v2.0 - expected before end of month.
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mikl0s/ai_coding_tools?cache_bust=1)
 ![GitHub stars (latest by date)](https://img.shields.io/github/stars/mikl0s/ai_coding_tools?cache_bust=1)
 ![GitHub issues (latest by date)](https://img.shields.io/github/issues/mikl0s/ai_coding_tools?cache_bust=1)
