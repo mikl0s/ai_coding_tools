@@ -177,11 +177,11 @@ In addition to the existing scope of work, you will generate a document titled "
 ## Final Output
 At the end of the interaction, the LLM will generate a structured folder with all the documents and plans, ready to be handed off to AI coding agents. Here’s an example folder structure:
 
-> project-name/
-> ├── docs/
-> │   ├── database-schema.md
-> │   ├── frontend.md
-> │   ├── backend.md
-> │   ├── user-flow.md
-> │   ├── third-party-libraries.md
-> ├── README.md
+```project-name/
+├── docs/
+│   ├── database-schema.md
+│   ├── frontend.md
+│   ├── backend.md
+│   ├── user-flow.md
+│   ├── third-party-libraries.md
+├── README.md
